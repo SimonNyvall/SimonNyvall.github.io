@@ -1,3 +1,7 @@
+---
+title: My titel homemade
+---
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/SimonNyvall/SimonNyvall.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
