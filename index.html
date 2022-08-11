@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .overlay {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-image: url(img/pexels-josh-sorenson-1714202.jpg);
+            background-size:auto;
+            overflow-x: hidden;
+            transition: 1s ease-in-out;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .overlay a:hover,
+        .overlay a:focus {
+            color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 45%;
+            right: 90px;
+            font-size: 60px;
+
+            animation: bounce 6s  forwards infinite alternate;
+            animation-timing-function: cubic-bezier(0.72, 0.01, 0.15, 0.92);
+        }
+
+        .closebtn:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(60%);
+            }
+            50% {
+                transform: translateX(40%);
+            }
+            75% {
+                transform: translateX(60%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 20px
+            }
+
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img id="clodeID" class="g8Logo" src="img/g8.png"></a>
+        <div class="overlay-content">
+            <img class="simonLogo" src="img/SimonNyvallLogo.png" alt="Simon Nyvall logo">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <p>text</p>
+    </div>
+    <script>
+        function closeNav() {
+            document.getElementById("myNav").style.width = "35%";
+            document.getElementById("closeID").style.display="none";
+        }
+    </script>
+
+</body>
+
+</html>
