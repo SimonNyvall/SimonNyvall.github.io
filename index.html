@@ -12,19 +12,18 @@
             height: 100%;
             width: 100%;
             position: fixed;
-            z-index: 1;
+            z-index: 2;
             top: 0;
             left: 0;
             background-image: url(img/pexels-josh-sorenson-1714202.jpg);
-            background-size:auto;
+            background-size: auto;
             overflow-x: hidden;
             transition: 1s ease-in-out;
         }
 
         .overlay-content {
             position: relative;
-            top: 25%;
-            width: 100%;
+            top: 20%;
             text-align: center;
             margin-top: 30px;
         }
@@ -49,7 +48,7 @@
             right: 90px;
             font-size: 60px;
 
-            animation: bounce 6s  forwards infinite alternate;
+            animation: bounce 6s forwards infinite alternate;
             animation-timing-function: cubic-bezier(0.72, 0.01, 0.15, 0.92);
         }
 
@@ -61,15 +60,19 @@
             0% {
                 transform: translateX(0);
             }
+
             25% {
                 transform: translateX(60%);
             }
+
             50% {
                 transform: translateX(40%);
             }
+
             75% {
                 transform: translateX(60%);
             }
+
             100% {
                 transform: translateX(0);
             }
@@ -94,25 +97,197 @@
 
 <body>
 
+    <audio id="myAudio">
+        <source src="sound/mallard-duck-call-quicksoundscom_u6lQNPlM.mp3" type="audio/mp3">
+    </audio>
+
     <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img id="clodeID" class="g8Logo" src="img/g8.png"></a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img id="closeID" class="g8Logo"
+                src="img/g8.png"></a>
         <div class="overlay-content">
             <img class="simonLogo" src="img/SimonNyvallLogo.png" alt="Simon Nyvall logo">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="https://github.com/SimonNyvall">Github</a>
+            <a href="https://github.com/SimonNyvall?tab=repositories">Projects</a>
+            <a href="simon.k.nyvall@gmail.com">Contact</a>
+            <a href="https://www.instagram.com/simon_nyvall/">Instagram</a>
+            <img class="socialIcons" src="img/logo/icons.png" alt="socials">
         </div>
     </div>
 
-    <div class="content">
-        <p>text</p>
+    <!-- Titel -->
+    <div class="titel">
+        <div class="titelBar"></div>
+        <div class="titelText">
+            <h2>Welcome</h2>
+            <p>To the journey of learning how to code</p>
+        </div>
+    </div>
+
+    <!-- About me -->
+    <div class="aboutMe">
+        <img class="duck" src="img/duck.png" onclick="playSound()">
+        <img class="pictureOfMe" src="img/me.jpg">
+        <img class="mon" src="img/dell.jpeg">
+        <div class="textContainer">
+            <h1>
+                About me
+            </h1>
+            <p>
+                I'm a 20 year old kid... Shit I'm old. Anyway I live in Sweden.
+            </p>
+            <p>
+                I have been coding actively for 5 years, and is still learning. You are super welcome to follow along
+                and code / learn with me. Together we can learn about new concepts regarding programming. If you have
+                any questions or project ideas my e-mail is in the “Contact” button to the left.
+            </p>
+        </div>
+    </div>
+
+    <!-- Minimap -->
+    <div id="minimap">
+        <input id="minimap-range" type="range" max="100" value="0">
+    </div>
+
+    <!-- MarkDown content -->
+    <div id="content" class="content">
+        <h2 id="welcome-to-github-pages">Welcome to GitHub Pages</h2>
+        <p>You can use the <a href="https://github.com/SimonNyvall/SimonNyvall.github.io/edit/main/index.md">editor on
+                GitHub</a> to maintain and preview the content for your website in Markdown files.</p>
+        <p>Whenever you commit to this repository, GitHub Pages will run <a href="https://jekyllrb.com/">Jekyll</a> to
+            rebuild the pages in your site, from the content in your Markdown files.</p>
+        <h3 id="markdown">Markdown</h3>
+        <p>Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for</p>
+        <pre><code class="lang-markdown">Syntax highlighted code block
+        
+        <span class="hljs-section"># Header 1</span>
+        <span class="hljs-section">## Header 2</span>
+        <span class="hljs-section">### Header 3</span>
+        
+        <span class="hljs-bullet">- </span>Bulleted
+        <span class="hljs-bullet">- </span>List
+        
+        <span class="hljs-bullet">1. </span>Numbered
+        <span class="hljs-bullet">2. </span>List
+        
+        <span class="hljs-strong">**Bold**</span> and <span class="hljs-emphasis">_Italic_</span> and <span class="hljs-code">`Code`</span> text
+        
+        [<span class="hljs-string">Link</span>](<span class="hljs-link">url</span>) and ![<span class="hljs-string">Image</span>](<span class="hljs-link">src</span>)
+        </code></pre>
+        <p>For more details see <a
+                href="https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Basic
+                writing and formatting syntax</a>.</p>
+        <h3 id="jekyll-themes">Jekyll Themes</h3>
+        <p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a
+                href="https://github.com/SimonNyvall/SimonNyvall.github.io/settings/pages">repository settings</a>. The
+            name of this theme is saved in the Jekyll <code>_config.yml</code> configuration file.</p>
+        <h3 id="support-or-contact">Support or Contact</h3>
+        <p>Having trouble with Pages? Check out our <a
+                href="https://docs.github.com/categories/github-pages-basics/">documentation</a> or <a
+                href="https://support.github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+        <h2 id="welcome-to-github-pages">Welcome to GitHub Pages</h2>
+        <p>You can use the <a href="https://github.com/SimonNyvall/SimonNyvall.github.io/edit/main/index.md">editor on
+                GitHub</a> to maintain and preview the content for your website in Markdown files.</p>
+        <p>Whenever you commit to this repository, GitHub Pages will run <a href="https://jekyllrb.com/">Jekyll</a> to
+            rebuild the pages in your site, from the content in your Markdown files.</p>
+        <h3 id="markdown">Markdown</h3>
+        <p>Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for</p>
+        <pre><code class="lang-markdown">Syntax highlighted code block
+
+<span class="hljs-section"># Header 1</span>
+<span class="hljs-section">## Header 2</span>
+<span class="hljs-section">### Header 3</span>
+
+<span class="hljs-bullet">- </span>Bulleted
+<span class="hljs-bullet">- </span>List
+
+<span class="hljs-bullet">1. </span>Numbered
+<span class="hljs-bullet">2. </span>List
+
+<span class="hljs-strong">**Bold**</span> and <span class="hljs-emphasis">_Italic_</span> and <span class="hljs-code">`Code`</span> text
+
+[<span class="hljs-string">Link</span>](<span class="hljs-link">url</span>) and ![<span class="hljs-string">Image</span>](<span class="hljs-link">src</span>)
+</code></pre>
+        <p>For more details see <a
+                href="https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Basic
+                writing and formatting syntax</a>.</p>
+        <h3 id="jekyll-themes">Jekyll Themes</h3>
+        <p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a
+                href="https://github.com/SimonNyvall/SimonNyvall.github.io/settings/pages">repository settings</a>. The
+            name of this theme is saved in the Jekyll <code>_config.yml</code> configuration file.</p>
+        <h3 id="support-or-contact">Support or Contact</h3>
+        <p>Having trouble with Pages? Check out our <a
+                href="https://docs.github.com/categories/github-pages-basics/">documentation</a> or <a
+                href="https://support.github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+        <h2 id="welcome-to-github-pages">Welcome to GitHub Pages</h2>
+        <p>You can use the <a href="https://github.com/SimonNyvall/SimonNyvall.github.io/edit/main/index.md">editor on
+                GitHub</a> to maintain and preview the content for your website in Markdown files.</p>
+        <p>Whenever you commit to this repository, GitHub Pages will run <a href="https://jekyllrb.com/">Jekyll</a> to
+            rebuild the pages in your site, from the content in your Markdown files.</p>
+        <h3 id="markdown">Markdown</h3>
+        <p>Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for</p>
+        <pre><code class="lang-markdown">Syntax highlighted code block
+                
+                <span class="hljs-section"># Header 1</span>
+                <span class="hljs-section">## Header 2</span>
+                <span class="hljs-section">### Header 3</span>
+                
+                <span class="hljs-bullet">- </span>Bulleted
+                <span class="hljs-bullet">- </span>List
+                
+                <span class="hljs-bullet">1. </span>Numbered
+                <span class="hljs-bullet">2. </span>List
+                
+                <span class="hljs-strong">**Bold**</span> and <span class="hljs-emphasis">_Italic_</span> and <span class="hljs-code">`Code`</span> text
+                
+                [<span class="hljs-string">Link</span>](<span class="hljs-link">url</span>) and ![<span class="hljs-string">Image</span>](<span class="hljs-link">src</span>)
+                </code></pre>
+        <p>For more details see <a
+                href="https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Basic
+                writing and formatting syntax</a>.</p>
+        <h3 id="jekyll-themes">Jekyll Themes</h3>
+        <p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a
+                href="https://github.com/SimonNyvall/SimonNyvall.github.io/settings/pages">repository settings</a>. The
+            name of this theme is saved in the Jekyll <code>_config.yml</code> configuration file.</p>
+        <h3 id="support-or-contact">Support or Contact</h3>
+        <p>Having trouble with Pages? Check out our <a
+                href="https://docs.github.com/categories/github-pages-basics/">documentation</a> or <a
+                href="https://support.github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+
     </div>
     <script>
         function closeNav() {
             document.getElementById("myNav").style.width = "35%";
-            document.getElementById("closeID").style.display="none";
+            document.getElementById("closeID").style.opacity = "0";
         }
+
+        var x = document.getElementById("myAudio");
+
+        function playSound() {
+            x.play();
+        }
+
+        onload = () => {
+            if (navigator.userAgent.includes("Firefox")) {
+                const minimapRange = document.querySelector("#minimap-range");
+                const minimap = document.querySelector("#minimap");
+                const article = document.querySelector("#content");
+                const $ = getComputedStyle.bind();
+                minimap.style.display = "block";
+                minimapRange.style.width = minimap.style.height = parseInt($(minimapRange).width) * parseInt($(article).height) / parseInt($(article).width) + "px";
+                minimapRange.onchange = evt => scrollTo(0, parseInt($(article).height) * (evt.target.value / 100));
+            }
+            else {
+                document.querySelector("#warning").style.display = 'block';
+            }
+
+            const mini = document.getElementById("minimap");
+
+            mini.style.background = "rgba(38, 49, 51, .1) -moz-element(#content) no-repeat center / contain";
+
+        };
+
+        // background: rgba(254, 213, 70, .1) -moz-element(#content) no-repeat center / contain;
+
     </script>
 
 </body>
