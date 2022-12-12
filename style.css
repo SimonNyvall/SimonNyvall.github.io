@@ -15,7 +15,8 @@
 }
 
 .g8Logo {
-    width: 100px;
+    width: 100px; 
+    z-index: 10;
 }
 
 .socialIcons {
