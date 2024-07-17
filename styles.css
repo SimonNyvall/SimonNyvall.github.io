@@ -22,7 +22,6 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     position: relative;
     z-index: 1;
 
@@ -32,7 +31,7 @@ body {
 .left-side {
     width: 40vw;
     height: 100vh;
-    position: absolute;
+    position: relative;
     z-index: 1;
     background: transparent;
 }
@@ -40,17 +39,18 @@ body {
 .right-side {
     width: 60vw;
     height: 100vh;
-    position: absolute;
     left: 40vw;
     z-index: 1;
     background: transparent;
 }
 
+.hero-img {
+    width: 50%;
+}
+
 .container {
-    margin: auto;
     padding-left: 20px;
     padding-right: 20px;
-    max-width: 1000px;
 }
 
 .center {
@@ -63,7 +63,7 @@ body {
 }
 
 .side-margin {
-    margin-left: 20px;
+    margin-left: 40%;
 }
 
 .highlight {
@@ -198,23 +198,32 @@ body {
 }
 
 .item1 {
-    background-color: #ff3b3f; /* Red */
-    width: calc(66.66% - 30px);
+    border: 2px solid #333;
+    background-image: url("./images/bg.png");
+    background-size: cover;
+    width: calc(66.66% - 40px);
     height: 200px;
+    position: relative;
+}
+
+.about-me-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 80%;
 }
 
 .item2 {
-    background-color: #ffcf33; /* Yellow */
-    width: calc(33.33% - 60px); /* Takes up one-third of the container width */
+    width: calc(33.33% - 61px); /* Takes up one-third of the container width */
+    border: 2px solid #333;
     height: 200px;
     display: block;
     padding-left: 30px;
     padding-right: 30px;
 }
 
-.no-margin {
-    margin: 0;
-    padding: 0;
+.info-small-text {
+    color:#8e8e8e;
 }
 
 .tech-stack {
@@ -283,9 +292,29 @@ body {
 }
 
 .item5 {
-    background-color: #ff3b3f; /* Red */
-    width: calc(66.66% - 60px); /* Takes up two-thirds of the container width */
+    border: 2px solid #333;
+    width: calc(66.66% - 70px); /* Takes up two-thirds of the container width */
     height: calc(400px + 30px); /* Combined height of item3 and item4 + gap */
+    margin-left: 60px;
+    position: relative;
+    display: block;
+    background-image: url("./images/grid.svg");
+    background-size: cover;
+}
+
+.scope-text {
+    max-width: 60%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+}
+
+.code-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 50%;
 }
 
 .button {
@@ -293,13 +322,14 @@ body {
     align-items: center; /* Vertically align the image and text */
     gap: 10px; /* Space between the image and text */
     margin-top: 10px;
-    padding: 10px;
-    background-color: white;
-    color: #333;
+    padding: 10px 30px 10px 30px;
+    background-color: #222;
+    color: white;
     border: 2px solid #c35ad3;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    position: relative;
 }
 
 .copy-icon {
@@ -313,4 +343,13 @@ body {
     margin: 0;
     padding: 0;
     font-weight: bold;
+}
+
+.confetti-gif {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -60px;
+    right: 10px;
+    pointer-events: none;
 }

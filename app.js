@@ -15,3 +15,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+function playConfetti() {
+    var confettiGif = document.getElementById('confettiGif');
+    confettiGif.src = './images/confetti.gif';
+    confettiGif.style.display = 'block';
+    
+    setTimeout(function() {
+        confettiGif.style.display = 'none';
+        confettiGif.src = '';
+    }, 2000);
+}

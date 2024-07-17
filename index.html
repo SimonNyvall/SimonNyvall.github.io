@@ -10,8 +10,6 @@
 <body>
     <section class="hero-section">
         <div class="right-side">
-        </div>
-        <div class="left-side">
             <div class="container">
                 <div class="side-margin margin-top">
                     <h1 class="highlight big-font">Hello, I'm</h1>
@@ -26,40 +24,47 @@
                 </div>
             </div>
         </div>
+        <div class="left-side">
+            <img class="margin-top hero-img" src="./images/exp4.svg" alt="hero figure">
+        </div>
     </section>
     <section class="information-section">
         <div class="flex-container">
-            <div class="item item1">
-                <h1 class="into-content">I prioritize client collaboration, fostering open communication</h1>
+            <div class="item item1 glas">
+                <h1 class="into-content info-big-font about-me-text">I prioritize client collaboration, fostering open communication</h1>
             </div>
-            <div class="item item2">
+            <div class="item item2 glas">
                 <div class="tech-stack-text">
-                    <p class="no-margin">I constantly try to improve</p>
-                    <h1 clas="no-margin info-big-font">My teck stack</h1>
+                    <p style="margin-bottom: 0;" class="no-margin info-small-text">I constantly try to improve</p>
+                    <h1 class="no-margin info-big-font">My teck stack</h1>
                 </div>
                 <div class="tech-stack">
-                    <div><i class="fab fa-git"></i>Git</div>
-                    <div>.NET</div>
-                    <div>ASP.NET</div>
-                    <div>Azure</div>
+                    <div><i class="fab fa-git-alt"></i>Git</div>
+                    <div><i class="fa-solid fa-computer"></i>.NET</div>
+                    <div><i class="fa-solid fa-computer"></i>ASP.NET</div>
+                    <div><i class="fa-brands fa-linux"></i>Linux</div>
                 </div>
             </div>
             <div class="nested-container">
                 <div class="item item3 glas">
                     <h1 class="info-big-font info-content">Tech enthusiast with a passion for development</h1>
-                    <img class="app-img" src="./images/app.png" />
+                    <img class="app-img" src="./images/b4.svg" />
                 </div>
                 <div class="item item4">
                     <h1 class="info-big-font info-content">Do you want to start a project together?</h1>
-                    <button class="info-content button">
+                    <button class="info-content button" onclick="playConfetti()">
                         <img class="copy-icon" src="./images/copy.png"/>
                         Copy my email addess
+                        <img id="confettiGif" class="confetti-gif" src="" alt="confetti" style="display: none;"/>
                     </button>
                 </div>
             </div>
-            <div class="item item5">
-                <p class="info-content">The Inside Scoop</p>
-                <h1 class="info-big-font info-content">Currently building a Portfolio Website</h1>
+            <div class="item item5 glas">
+                <div class="scope-text">
+                    <p style="margin-bottom: 0;" class="info-small-text no-margin">The Inside Scoop</p>
+                    <h1 class="info-big-font info-content no-margin">Currently building a Portfolio Website</h1>
+                </div>
+                <img class="code-bg" src="./images/b5.svg" alt="code">
             </div>
         </div>
     </section>
