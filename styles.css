@@ -99,7 +99,7 @@ body {
     font-weight: bold;
     font-size: 1em;
     cursor: pointer;
-    transition: background 1s ease-in-out; /* Adjusted duration to 1 second */
+    transition: background 1s ease-in-out;
     margin-right: 10px;
     display: inline-block;
 }
@@ -167,14 +167,14 @@ body {
 /* Information section */
 
 .information-section {
-    height: 100vh;
+    height: 70vh;
 }
 
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    width: 70%; /* Adjust width as needed */
-    gap: 30px; /* Gap between boxes */
+    width: 70%;
+    gap: 30px;
     padding: 10px;
     border-radius: 10px;
     position: relative;
@@ -232,7 +232,7 @@ body {
 }
 
 .card2 {
-    width: calc(33.33% - 61px); /* Takes up one-third of the container width */
+    width: calc(33.33% - 61px);
     border: 2px solid #333;
     height: 200px;
     display: block;
@@ -258,7 +258,7 @@ body {
     text-align: center;
     flex: 1 1 30%;
     display: flex;
-    align-cards: center;
+    align-items: center;
     justify-content: center;
     color: white;
 }
@@ -276,12 +276,12 @@ body {
 .nested-container {
     display: flex;
     flex-direction: column;
-    width: calc(33.33% - 30px); /* Takes up one-third of the container width */
+    width: calc(33.33% - 30px);
     gap: 30px;
 }
 
 .card3 {
-    height: calc(50% - 30px); /* Takes up half of the nested container height */
+    height: calc(50% - 30px);
     width: 100%;
     position: relative;
     border: 2px solid #333;
@@ -296,8 +296,8 @@ body {
 }
 
 .card4 {
-    background-color: #33cfff; /* Blue */
-    height: calc(50% - 5px); /* Takes up half of the nested container height */
+    background-color: #33cfff;
+    height: calc(50% - 5px);
     background-image: url(./images/fade-purple.jpg);
     background-size: cover;
     text-align: center;
@@ -311,8 +311,8 @@ body {
 
 .card5 {
     border: 2px solid #333;
-    width: calc(66.66% - 70px); /* Takes up two-thirds of the container width */
-    height: calc(400px + 30px); /* Combined height of item3 and item4 + gap */
+    width: calc(66.66% - 70px);
+    height: calc(400px + 30px);
     margin-left: 60px;
     position: relative;
     display: block;
@@ -336,9 +336,9 @@ body {
 }
 
 .button {
-    display: flex; /* Use flexbox for the button content */
-    align-items: center; /* Vertically align the image and text */
-    gap: 10px; /* Space between the image and text */
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-top: 10px;
     padding: 10px 30px 10px 30px;
     background-color: #222;
@@ -370,4 +370,72 @@ body {
     top: -60px;
     right: 10px;
     pointer-events: none;
+}
+
+/* Project section */
+
+.project-section {
+    height: 100vh;
+}
+
+.project-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project-project {
+    margin-top: 50px;
+}
+
+.project-sector {
+    display: flex;
+}
+
+.project-img {
+    width: 15%;
+}
+
+.project-text {
+    padding-left: 20px;
+}
+
+.project-header {
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+.project-description {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: darkgray;
+    padding-bottom: 20px;
+}
+
+.project-button {
+    text-decoration: none;
+    width: 200px;
+    height: 100px;
+    background-color: #333;
+    padding: 15px 20px 15px 50px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #c35ad3;
+    position: relative;
+}
+
+.project-button-img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 10px;
+}
+
+.project-hr {
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
