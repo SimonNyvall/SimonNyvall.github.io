@@ -9,3 +9,4 @@
 [ ] - mobile scaling
 [x] - download cv button
 [ ] - fix css classes name
+[ ] - fix all buttons animation to be as the view project buttons
