@@ -439,8 +439,17 @@ body {
     display: flex;
 }
 
-.project-img {
+.project-img-normal {
     width: 15%;
+    height: 15%;
+}
+
+.project-img-small {
+    width: 12%;
+    height: 12%;
+    margin-top: 35px;
+    margin-right: 30px;
+    padding-left: 20px;
 }
 
 .project-text {
@@ -528,7 +537,8 @@ body {
 }
 
 .project-hr {
-    width: 50%;
+    width: 30%;
     margin-top: 40px;
     margin-bottom: 40px;
+    border: 2px dashed #333;
 }

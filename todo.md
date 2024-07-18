@@ -4,7 +4,7 @@
 [x] - card animation on scroll
 [ ] - Fix the lorum text
 [ ] - Hire now model
-[ ] - project page
+[x] - project page
 [ ] - fotter section
 [ ] - mobile scaling
 [x] - download cv button
