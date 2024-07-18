@@ -1,3 +1,4 @@
+// Auto type
 var typed = new Typed(".auto-type", {
     strings : [".NET Developer", "Problem Solver", "Simon Nyvall"],
     typeSpeed : 150,
@@ -5,14 +6,45 @@ var typed = new Typed(".auto-type", {
     loop : true
 })
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetElement = document.querySelector(this.getAttribute('href'));
-        window.scroll({
-            top: targetElement.offsetTop,
-            behavior: 'smooth'
+// Smooth scroll
+$(document).ready(function() {
+    let isScrolling = false;
+    let scrollDelay = 1000;
+    let sections = $("section");
+    let currentScrollIndex = 0;
+
+    $(window).on('wheel', function(event) {
+        if (isScrolling) return;
+
+        let delta = event.originalEvent.deltaY;
+        let customScrollOffset = 0;
+
+        if (delta > 0) {
+            // Scrolling down
+            if (currentScrollIndex < sections.length - 1) {
+                currentScrollIndex++;
+            }
+        } else {
+            // Scrolling up
+            if (currentScrollIndex > 0) {
+                currentScrollIndex--;
+            }
+        }
+
+        if (sections.eq(currentScrollIndex).attr('id') === 'section2') {
+            customScrollOffset = 200;
+        }
+
+        let target = sections.eq(currentScrollIndex).offset().top - customScrollOffset;
+        isScrolling = true;
+
+        $('html, body').animate({
+            scrollTop: target
+        }, scrollDelay, function() {
+            isScrolling = false;
         });
+
+        event.preventDefault();
     });
 });
 
@@ -37,48 +69,29 @@ function copyTextIntoClipboard() {
     navigator.clipboard.writeText(textToCopy)
 }
 
-const infoObserverRightLeft = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('info-show-right-left');
-        } else {
-            entry.target.classList.remove('info-show-right-left');
-        }
-    })
-})
-
 const infoObserverLeftRight1 = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('info-show-left-right-1');
-        } else {
-            entry.target.classList.remove('info-show-left-right-1');
-        }
+        if (!entry.isIntersecting) return
+
+        entry.target.classList.add('info-show-left-right-1');
     })
 })
 
 const infoObserverLeftRight2 = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('info-show-left-right-2');
-        } else {
-            entry.target.classList.remove('info-show-left-right-2');
-        }
+        if (!entry.isIntersecting) return
+
+        entry.target.classList.add('info-show-left-right-2');
     })
 })
 
 const infoObserverDownUp = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('info-show-down-up');
-        } else {
-            entry.target.classList.remove('info-show-down-up');
-        }
+        if (!entry.isIntersecting) return
+
+        entry.target.classList.add('info-show-down-up');
     })
 })
-
-const hiddenElementsRightLeft = document.querySelectorAll('.info-hidden-right-left');
-hiddenElementsRightLeft.forEach((element) => infoObserverRightLeft.observe(element));
 
 const hiddenElementsLeftRight1 = document.querySelectorAll('.info-hidden-left-right-1');
 hiddenElementsLeftRight1.forEach((element) => infoObserverLeftRight1.observe(element));
