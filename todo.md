@@ -8,3 +8,4 @@
 [ ] - fotter section
 [ ] - mobile scaling
 [x] - download cv button
+[ ] - fix css classes name
