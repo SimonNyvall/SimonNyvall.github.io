@@ -302,9 +302,14 @@ body {
     color: white;
 }
 
-.tech-stack div i {
+.tech-stack div img {
     margin-right: 5px;
     flex-direction: column;
+}
+
+.info-tech-img {
+    width: 20px;
+    height: 20px;
 }
 
 .tech-stack-text {
