@@ -2,7 +2,7 @@
 let currentScrollIndex = 0;
 
 // Auto type
-var typed = new Typed(".auto-type", {
+var typed = new Typed(".hero-auto-type", {
     strings : [".NET Developer", "Problem Solver", "Simon Nyvall"],
     typeSpeed : 150,
     backSpeed : 150,
