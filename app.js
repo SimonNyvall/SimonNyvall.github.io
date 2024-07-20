@@ -13,7 +13,7 @@ var typed = new Typed(".hero-auto-type", {
 $(document).ready(function() {
     let isScrolling = false
     let scrollDelay = 800
-    let debounceDelay = 1
+    let debounceDelay = 0
     let sections = $("section")
     let debounceTimeout
 

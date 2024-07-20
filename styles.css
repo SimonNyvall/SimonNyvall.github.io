@@ -554,7 +554,7 @@ body {
 .footer-section {
     width: 100%;
     background-color: #211e29;
-    height: 400px;
+    height: 300px;
     position: relative;
 }
 
@@ -572,7 +572,68 @@ body {
 .footer-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 10px;
     padding: 20px;
+}
+
+.footer-header {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.footer-description {
+    color: darkgray;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.footer-socials-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row; 
+    width: 100px;
+}
+
+.footer-socials {
+    width: 50px;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.footer-socials img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer-explore {
+    font-weight: 1.5em;
+    font-weight: bold;
+}
+
+.footer-nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-nav-item {
+    width: 100px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #222;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+.footer-nav-item:hover {
+    padding-left: 20px;
+    width: 90px;
+    transition: all 0.5s ease-in-out;
+    color: #ff6eff;
 }

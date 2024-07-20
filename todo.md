@@ -5,7 +5,7 @@
 [ ] - Fix the lorum text
 [ ] - Hire now model
 [x] - project page
-[ ] - fotter section
+[x] - fotter section
 [ ] - mobile scaling
 [x] - download cv button
 [ ] - fix css classes name
