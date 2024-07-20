@@ -2,7 +2,7 @@
 [x] - About section
 [x] - scroll animation
 [x] - card animation on scroll
-[ ] - Fix the lorum text
+[x] - Fix the lorum text
 [ ] - Hire now model
 [x] - project page
 [x] - fotter section
