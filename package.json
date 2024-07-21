@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.3",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.5.30",
+    "jquery": "^3.7.1"
+  },
+  "scripts": {
+    "build": "webpack"
+  }
+}
