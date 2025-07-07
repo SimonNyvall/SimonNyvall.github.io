@@ -337,7 +337,7 @@ body {
         left: 0;
         bottom: unset;
         position: static;
-        font-size: 1.1em;
+        font-size: 1.4rem !important;
         text-align: center;
         margin: 0 0 8px 0;
         padding: 0;
@@ -365,12 +365,9 @@ body {
         margin: 12px auto 0 auto;
     }
     .button {
-        width: 90vw;
-        max-width: 320px;
-        font-size: 1em;
-        padding: 12px 0;
-        text-align: center;
-        margin: 0 auto;
+        font-size: 1rem !important;
+        text-align: center !important;
+        margin: 5px auto !important;
     }
     .confetti-gif {
         width: 80px;
@@ -392,6 +389,10 @@ body {
         position: static;
         display: block;
         margin: 12px auto 0 auto;
+    }
+
+    .info-small-text {
+        margin-bottom: 10px !important;
     }
 }
 
