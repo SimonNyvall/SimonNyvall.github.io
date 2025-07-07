@@ -203,6 +203,7 @@ body {
     }
     .hero-side-margin, .hero-margin-top {
         margin: 0;
+        margin-bottom: 5rem;
         transform: none;
     }
     .hero-big-font {
@@ -227,7 +228,7 @@ body {
     .hero-buttons {
         flex-direction: column;
         gap: 10px;
-        margin-top: 16px;
+        margin-top: 2rem;
         align-items: center;
     }
     .hero-button-hire, .hero-button-cv {
@@ -237,7 +238,6 @@ body {
         padding: 12px 0;
         text-align: center;
     }
-}
 }
 
 
