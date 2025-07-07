@@ -163,6 +163,83 @@ body {
     display: inline-block;
 }
 
+@media (max-width: 500px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        height: auto;
+        min-height: 100vh;
+        padding: 0;
+    }
+    .hero-left-side, .hero-right-side {
+        width: 100vw;
+        height: auto;
+        min-height: unset;
+        left: unset;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+    }
+    .hero-left-side {
+        order: 2;
+        margin-bottom: 0;
+    }
+    .hero-right-side {
+        order: 1;
+        margin-top: 0;
+    }
+    .hero-img {
+        width: 70vw;
+        max-width: 320px;
+        margin: 32px auto 0 auto;
+        display: block;
+    }
+    .hero-container {
+        padding: 0 4vw;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+    .hero-side-margin, .hero-margin-top {
+        margin: 0;
+        transform: none;
+    }
+    .hero-big-font {
+        font-size: 2.2em;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    .hero-type-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-about-text {
+        font-size: 1.1em;
+        text-align: center;
+        margin: 10px 0 0 0;
+        padding-bottom: 8px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 16px;
+        align-items: center;
+    }
+    .hero-button-hire, .hero-button-cv {
+        width: 90vw;
+        max-width: 320px;
+        font-size: 1em;
+        padding: 12px 0;
+        text-align: center;
+    }
+}
+}
+
 
 /* Information section ---------------------------------------------------------------------------------------------- */
 
