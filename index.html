@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
 
     <!-- Hero section -->
@@ -21,7 +23,7 @@
                     </div>
                     <p class="hero-about-text">Passionate Backend Developer Specializing in .NET</p>
                     <div class="hero-buttons">
-                        <a href="#" class="hero-button-hire">Hire Me</a>
+                        <a href="https://github.com/SimonNyvall" class="hero-button-hire">View skills</a>
                         <a href="./public/CV.pdf" downlaod class="hero-button-cv">Download CV</a>
                     </div>
                 </div>
@@ -37,7 +39,8 @@
     <section id="section2" class="information-section">
         <div class="flex-container">
             <div class="card card1 glas">
-                <h1 class="into-content info-big-font about-me-text">I prioritize client collaboration, fostering open communication</h1>
+                <h1 class="into-content info-big-font about-me-text">I prioritize client collaboration, fostering open
+                    communication</h1>
             </div>
             <div class="card card2 glas">
                 <div class="tech-stack-text">
@@ -59,9 +62,9 @@
                 <div class="card card4 info-hidden-left-right-2">
                     <h1 class="info-big-font info-content">Do you want to start a project together?</h1>
                     <button id="copyButton" class="info-content button">
-                        <img class="copy-icon" src="./images/copy.png"/>
+                        <img class="copy-icon" src="./images/copy.png" />
                         Copy my email addess
-                        <img id="confettiGif" class="confetti-gif" src="" alt="confetti" style="display: none;"/>
+                        <img id="confettiGif" class="confetti-gif" src="" alt="confetti" style="display: none;" />
                     </button>
                 </div>
             </div>
@@ -80,48 +83,71 @@
     <section id="section3" class="project-section">
         <div class="project-container">
             <h1 class="project-header">My Projects</h1>
-            <p class="project-description">I am passionate about open-source development, believing in its power to drive collaborative innovation.</p>
+            <p class="project-description">I am passionate about open-source development, believing in its power to
+                drive collaborative innovation.</p>
             <article class="project-article project-hidden">
                 <div class="project-sector">
-                    <img class="project-img-normal" src="./images/computer.svg" alt="project"/>
+                    <img class="project-img-normal" src="./images/computer.svg" alt="project" />
                     <div class="project-text">
                         <h1 class="project-header">B-branch</h1>
                         <p class="project-description">A better git branch tool, inspired by GitButler.</p>
-                        <a href="https://github.com/SimonNyvall/B-branch" class="project-button">
-                            <img class="project-button-img" src="./images/git.svg" alt="Github logo">
-                            View Project
-                        </a>
+                        <div class="project-stack-container">
+                            <div>
+                                <a href="https://github.com/SimonNyvall/B-branch" class="project-button">
+                                    <img class="project-button-img" src="./images/git.svg" alt="Github logo">
+                                    View Project
+                                </a>
+                            </div>
+                            <div class="project-stack">
+                                <div><img class="info-tech-img" src="./images/g.png" /><span>Git</span></div>
+                                <div><img class="info-tech-img" src="./images/net.png" /><span>.NET</span></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <hr class="project-hr"/>
             </article>
             <article class="project-article project-hidden">
                 <div class="project-sector">
-                    <img class="project-img-small" src="./images/trading.png" alt="project"/>
+                    <img class="project-img-small" src="./images/trading.png" alt="project" />
                     <div class="project-text">
-                        <h1 class="project-header">Vortex.API</h1>
-                        <p class="project-description">A minimal-api wrapper for F#.</p>
-                        <a href="https://github.com/SimonNyvall/Vortex.API" class="project-button">
+                        <h1 class="project-header">Aurebesh</h1>
+                        <p class="project-description">A complete Unix shell with Star Wars easter eggs.</p>
+                        <div class="project-stack-container">
+                            <div>
+                        <a href="https://github.com/SimonNyvall/Aurebesh" class="project-button">
                             <img class="project-button-img" src="./images/git.svg" alt="Github logo">
                             View Project
                         </a>
+                        </div>
+                        <div class="project-stack">
+                            <div><img class="info-tech-img" src="./images/cpp.png" /><span>C++</span></div>
+                            <div><img class="info-tech-img" src="./images/linux.png" /><span>Linux</span></div>
+                        </div>
+                        </div>
                     </div>
                 </div>
-                <hr class="project-hr"/>
             </article>
             <article class="project-article project-hidden">
                 <div class="project-sector">
-                    <img class="project-img-small" src="./images/globe.png" alt="project"/>
+                    <img class="project-img-small" src="./images/globe.png" alt="project" />
                     <div class="project-text">
                         <h1 class="project-header">WebServer</h1>
-                        <p class="project-description">Study-project to investegate web-development.</p>
+                        <p class="project-description">A web server platform built from the ground up.</p>
+                        <div class="project-stack-container">
+                            <div>
                         <a href="https://github.com/SimonNyvall/WebServer" class="project-button">
                             <img class="project-button-img" src="./images/git.svg" alt="Github logo">
                             View Project
                         </a>
+                        </div>
+                        <div class="project-stack">
+                            <div><img class="info-tech-img" src="./images/html.png" /><span>HTML</span></div>
+                            <div><img class="info-tech-img" src="./images/net.png" /><span>.NET</span></div>
+                            <div><img class="info-tech-img" src="./images/typeascript.png" /><span>Typescript</span></div>
+                        </div>
+                        </div>
                     </div>
                 </div>
-                <hr class="project-hr"/>
             </article>
         </div>
     </section>
@@ -162,4 +188,5 @@
     <script type="module" src="./dist/confettiEmail.bundle.js"></script>
     <script type="module" src="./dist/autoType.bundle.js"></script>
 </body>
+
 </html>

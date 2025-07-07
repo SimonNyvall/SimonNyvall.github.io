@@ -637,3 +637,29 @@ body {
     transition: all 0.5s ease-in-out;
     color: #ff6eff;
 }
+
+.project-stack-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-stack > div {
+    display: flex;
+    align-items: center;  
+    gap: 8px;            
+    background-color: #2e2e3a;
+    padding: 10px 16px;
+    border-radius: 5px;
+    margin-top: -12px;
+}
+
+.project-stack .info-tech-img {
+    width: 24px;
+    height: 24px;
+}
